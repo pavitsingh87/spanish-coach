@@ -1,0 +1,40 @@
+.container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .slot {
+    display: inline-block;
+    font-size: 24px;
+    margin: 0 20px;
+    position: relative;
+  }
+  
+  .slot select {
+    width: 200px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+  
+  #pronoun-result, #activity-result {
+    margin: 0 10px;
+  }
+  
+  button {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  .goog-te-menu-value {
+    display: none !important;
+  }
+    

@@ -1,58 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pronoun Slot Machine</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  
-</head>
-<body class="bg-gray-100">
-  
-	<div class="navbar-menu relative z-50 hidden">
-		<div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
-		<nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
-			<div class="flex items-center mb-8">
-				<a class="mr-auto text-3xl font-bold leading-none" href="#">
-					
-				</a>
-				<button class="navbar-close">
-					<svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-					</svg>
-				</button>
-			</div>
-			<!--<div>
-				<ul>
-					<li class="mb-1">
-						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Home</a>
-					</li>
-					<li class="mb-1">
-						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">About Us</a>
-					</li>
-					<li class="mb-1">
-						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Services</a>
-					</li>
-					<li class="mb-1">
-						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Pricing</a>
-					</li>
-					<li class="mb-1">
-						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="#">Contact</a>
-					</li>
-				</ul>
-			</div>-->
-			<div>
-				<div class="pt-6">
-          <a class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-blue-600 hover:bg-blue-700  rounded-xl" href="#">Sign In</a>
-				
-					</div>
-				
-			</div>
-		</nav>
-  </div>
-  <div class="slot-container py-8 mx-20">
+<!-- resources/views/components/SlotContainer.blade.php -->
+
+<div class="slot-container py-8 mx-20">
     <audio id="spin-sound" style="display:hidden;">
-      <source src="free-spin.mp3" type="audio/mpeg">
+      <source src="audio/free-spin.mp3" type="audio/mpeg">
       Your browser does not support the audio element.
     </audio>
     <!-- First row: Select boxes and Spin button -->
@@ -96,8 +46,3 @@
       <textarea id="sentencetranslated" class="w-full h-20 px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:border-blue-500" placeholder="Your translated sentence will appear here"></textarea>
     </div>
   </div>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="script.js"></script>
-</body>
-</html>
